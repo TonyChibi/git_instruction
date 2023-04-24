@@ -6,11 +6,11 @@
 
 The GIT is a weird ancient program, that translate as Great Intriging Thing, or maby it is just a git. It was created by one ancient wizzard who caled himself Linux, or something like that. But that not the point.
 
-The Git can remember versions of your progects. He can memorized every stroke in versions of progect, and can tell you if they are different from version to version. And there is more features in it, but the main purpose is to control versions of yours.
+The Git can remember versions of your projects. He can memorized every stroke in versions of project, and can tell you if they are different from version to version. And there is more features in it, but the main purpose is to control versions of yours.
 
 -*But how can i find it?*
 
--It's simple, kido. Here is your [reference](https://git-scm.com/downloads) . Just choose your version thoroughly comparing to sistem of yours and be gratefull.
+-It's simple, kido. Here is your [reference](https://git-scm.com/downloads) . Just choose your version thoroughly comparing to the sistem of yours and be gratefull.
 
 -*Wow! What shall i do now?*
 
@@ -18,3 +18,28 @@ The Git can remember versions of your progects. He can memorized every stroke in
 ___
 ***
 ---
+## <a name="first time">First time</a>
+ __You need to <a name="Login">identify</a> yourself:__
+
+ git config --global user.name "your_name"
+
+ git config --global user.email your_email
+
+ __To initialize project and create repository use<a name="init"> init</a> comand like this:__ 
+ 
+ git init
+
+ __Add files to <a name="track">track</a> them:__
+ 
+ git add "file_name"
+
+ git add . (*-to add all files in the folder*)
+
+ __To <a name="commit">commit</a> changes in files:__
+
+ git commit -m "comment about this version, which is stricly necessarry"
+
+
+
+
+
