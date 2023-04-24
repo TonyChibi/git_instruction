@@ -48,5 +48,16 @@ __To <a name="delete_branch"> delete branch</a>:
 
 git branch -d branch_name
 
+## <a name="crossing">Cross-over</a>
+__To cross over versions or branches:__
+
+git checkout branch_name (-*move you to another branch*)
+
+git checkout code_of_some_commit 
+(-*move you to another commited state. You can use only four first symbols of a commit code*)
+
+
+git checkout main (-*to return on your latest commit on main branch or for some one - master branch*)
+
 
 
