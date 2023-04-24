@@ -39,7 +39,14 @@ ___
 
  git commit -m "comment about this version, which is stricly necessarry"
 
+## <a name="branching">Branching</a>
+__To <a name="create_branch">create branch</a> the command is folowing:__
 
+git branch branch_name
+
+__To <a name="delete_branch"> delete branch</a>:
+
+git branch -d branch_name
 
 
 
