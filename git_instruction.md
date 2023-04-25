@@ -29,13 +29,13 @@ ___
  
  git init
 
- __Add files to <a name="track">track</a> them:__
+ __Add and stage files for commitment to <a name="track">track</a> them:__
  
  git add "file_name"
 
  git add . (*-to add all files in the folder*)
 
- __To <a name="commit">commit</a> changes in files:__
+ __To <a name="commit">commit</a> staged files in folder:__
 
  git commit -m "comment about this version, which is stricly necessarry"
 
