@@ -48,5 +48,26 @@ __To <a name="delete_branch"> delete branch</a>:
 
 git branch -d branch_name
 
+## <a name="observing">Observing</a>
+
+__To <a name="observe_commits">observe commits</a> use *log* comand:
+
+git log (-*shows you all commits relative to your current position*)
+
+git log --all (-*shows you all commits existing in whole tree*)
+
+git log --graph (-*shows you relative commits with a graphical illustration of tree's branches*)
+
+__You can mix command's option's suffixes to fit your wills. For example:__
+
+git log --all --graph (-*shows you all existing in tree branches and commits within them with graphical illustration*)
+
+__To observe the <a name="difference">difference</a> between current not staged version and the last commit:__
+
+git diff 
+
+__You can compare current not staged version to some commit you wish:__
+git diff code_of_commit (-*first four symbols of commit code would be enough*)
+
 
 
