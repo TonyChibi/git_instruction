@@ -48,5 +48,11 @@ __To <a name="delete_branch"> delete branch</a>:
 
 git branch -d branch_name
 
+## <a name="merging">Merging</a>
 
+__To <a name="merge">merge</a> branches or commits:__
+
+git merge branch_name_or_commit_code (-*merge the current version with a chosen one*)
+
+__There may be conflict between versions of a project if the same stroke appears to be different. You may choose between options there, eithere chose current, other or both to be in a state.__
 
