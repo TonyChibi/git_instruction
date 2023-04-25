@@ -39,6 +39,8 @@ ___
 
  git commit -m "comment about this version, which is stricly necessarry"
 
+ __Also you may want some files to be <a name="untracked_files">untracked</a>. For this you may create a folder with name "git.ignore" then stage and commit that changes. Then all files you don't want to be tracked you can just place in that folder, and they wouldn't show up__
+
 ## <a name="branching">Branching</a>
 __To <a name="create_branch">create branch</a> the command is folowing:__
 
