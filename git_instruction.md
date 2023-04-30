@@ -90,3 +90,20 @@ git merge branch_name_or_commit_code (-*merge the current version with a chosen 
 
 __There may be conflict between versions of a project if the same stroke appears to be different. You may choose between options there, eithere chose current, other or both to be in a state. You will need to commit resultad state then__
 
+___
+
+# THE USEAGE OF <a name='remote_rep'>REMOTE REPOSITORY</a>
+
+**To <a name="clone">clone</a> remote repository use:**
+---
+git clone link_to_remote_repository (-*will clone remote repository inside your current file's dirrectory* )
+
+**__see more of [clone](https://git-scm.com/docs/git-clone) function__**
+___
+**Then you can <a name="push">push</a> to and <a name="pull">pull</a> from that remote repository**:
+---
+git push (-*will merge your changes to remote repository*)
+
+git pull (-*will merge remote repository with yours*)
+
+
