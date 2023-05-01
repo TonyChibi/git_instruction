@@ -102,8 +102,13 @@ git clone link_to_remote_repository (-*will clone remote repository inside your 
 ___
 **Then you can <a name="push">push</a> to and <a name="pull">pull</a> from that remote repository**:
 ---
-git push (-*will merge your changes to remote repository*)
+git push (-*will merge your changes to remote repository*) -__or if you didn't connect them yet
+
+git push url_of_remote_repository name_of_your_branch (-*that will do*)
 
 git pull (-*will merge remote repository with yours*)
 
 
+## **You can also add remote repository by:**
+---
+git remote add origin url_of_your_remote_repository (-*it will add to your git.config file specifying name of your remote origin*)
