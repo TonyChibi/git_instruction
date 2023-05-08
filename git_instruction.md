@@ -38,6 +38,12 @@ ___
 ## __To <a name="commit">commit</a> staged files in folder:__
 
  git commit -m "comment about this version, which is stricly necessarry"
+
+ git commit --amend (-*will open a [vim](https://firstvds.ru/technology/tekstovyy-redaktor-vim-kratkoe-rukovodstvo) editor, then you can change a commit tips as you like. It will not cause the log line, and do not change the author of commi*)
+
+ git commit --amend --reset-author (-*will also reset the author of commit*)
+
+ >You should be carefull about changing existing commits, espetially remote ones.
 ___
  >__Also you may want some files to be <a name="untracked_files">untracked</a>. For this you may create a folder with name "git.ignore" then stage and commit that changes. Then all files you don't want to be tracked you can just place in that folder, and they wouldn't show up__
  ___
