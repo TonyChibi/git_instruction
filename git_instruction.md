@@ -18,41 +18,45 @@ The Git can remember versions of your projects. He can memorized every stroke in
 ___
 ***
 ---
-## <a name="first time">First time</a>
- __You need to <a name="Login">identify</a> yourself:__
+# <a name="first time">First time</a>
+ ## __You need to <a name="Login">identify</a> yourself:__
 
  git config --global user.name "your_name"
 
  git config --global user.email your_email
 
- __To initialize project and create repository use<a name="init"> init</a> comand like this:__ 
+## __To initialize project and create repository use<a name="init"> init</a> comand like this:__ 
  
  git init
 
- __Add and stage files for commitment to <a name="track">track</a> them:__
+## __Add and stage files for commitment to <a name="track">track</a> them:__
  
  git add "file_name"
 
  git add . (*-to add all files in the folder*)
 
- __To <a name="commit">commit</a> staged files in folder:__
+## __To <a name="commit">commit</a> staged files in folder:__
 
  git commit -m "comment about this version, which is stricly necessarry"
+___
+ >__Also you may want some files to be <a name="untracked_files">untracked</a>. For this you may create a folder with name "git.ignore" then stage and commit that changes. Then all files you don't want to be tracked you can just place in that folder, and they wouldn't show up__
+ ___
 
- __Also you may want some files to be <a name="untracked_files">untracked</a>. For this you may create a folder with name "git.ignore" then stage and commit that changes. Then all files you don't want to be tracked you can just place in that folder, and they wouldn't show up__
+# <a name="branching">Branching</a>
 
-## <a name="branching">Branching</a>
-__To <a name="create_branch">create branch</a> the command is folowing:__
+## __To <a name="create_branch">create branch</a> the command is folowing:__
 
 git branch branch_name
 
-__To <a name="delete_branch"> delete branch</a>:
+## __To <a name="delete_branch"> delete branch</a>__:
 
 git branch -d branch_name
+>your  branch must be fully merged in its upsteream branch, or in HEAD if no upstream was set
+___
 
-## <a name="observing">Observing</a>
+# <a name="observing">Observing</a>
 
-__To <a name="observe_commits">observe commits</a> use *log* comand:
+## __To <a name="observe_commits">observe commits</a> use *log* comand__:
 
 git log (-*shows you all commits relative to your current position*)
 
@@ -69,10 +73,11 @@ __To observe the <a name="difference">difference</a> between current not staged 
 git diff 
 
 __You can compare current not staged version to some commit you wish:__
-git diff code_of_commit (-*first four symbols of commit code would be enough*)
 
-## <a name="crossing">Cross-over</a>
-__To cross over versions or branches:__
+git diff code_of_commit (-*first four symbols of commit code would be enough*)
+___
+# <a name="crossing">Cross-over</a>
+## __To cross over versions or branches you'll need just move your HEAD:__
 
 git checkout branch_name (-*move you to another branch*)
 
@@ -82,13 +87,34 @@ git checkout code_of_some_commit
 
 git checkout main (-*to return on your latest commit on main branch or for some one - master branch*)
 
-## <a name="merging">Merging</a>
+## **You can also create a new branch while checking out**:
 
+git checkout -b branch_name (-*wil create a new branch and move you to that branch*)
+
+## **Beside it you can use relative movements with symbols like (^,~)**:
+**the "^" sign is set up to one commit before**:
+
+git checkout HEAD^ (-*will move you to one commit brefore your current position*)
+
+**the "~" sign along with a number allows you to move to any counter before**:
+
+git checkout main~5 (-*will move you to 5 commit before the latest commit on main branch*)
+
+---
+
+# <a name="merging">Merging</a>
 __To <a name="merge">merge</a> branches or commits:__
 
 git merge branch_name_or_commit_code (-*merge the current version with a chosen one*)
 
 __There may be conflict between versions of a project if the same stroke appears to be different. You may choose between options there, eithere chose current, other or both to be in a state. You will need to commit resultad state then__
+
+___
+
+# Branch moving
+## **Beside merging you can force branch to remove to desired position**:
+
+git branch -f branch_name other_place (-*will remove branch on top of other place position*)
 
 ___
 
