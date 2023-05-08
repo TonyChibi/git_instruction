@@ -111,12 +111,21 @@ __There may be conflict between versions of a project if the same stroke appears
 
 ___
 
-# Branch moving
+# <a name="branch_moving">Branch moving</a>
 ## **Beside merging you can force branch to remove to desired position**:
 
-git branch -f branch_name other_place (-*will remove branch on top of other place position*)
+git branch -f branch_name other_place (-*will reset yor branch to other place even if that branch existing already.*)
 
+> Without -f attibute **git branch** refuses to change an existing branch. In short  -f attribute **force** branch to addey your will.
 ___
+## You can <a name="rebase">rebase</a> existing branch
+
+git rebase base_branch (-*will remove current branch on top of base branch*)
+
+git rebase --onto base_branch comparing_branch topic_branch (-*that one compare **topic branch** with **comparing branch** and remove the different part of **topic branch** on top of **base branch** as a **topic branch**)
+
+git rebase base_branch topic_branch (-*hope you can guess it right*)
+>Rebase is placed one branch on top of another. To make commits of top one be commits of bottom one's, you need to merge it. Then you can delete branch without any risk. 
 
 # THE USEAGE OF <a name='remote_rep'>REMOTE REPOSITORY</a>
 
