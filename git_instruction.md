@@ -66,6 +66,8 @@ ___
 
 git log (-*shows you all commits relative to your current position*)
 
+git log --oneline (-*shows short hashes and commit messeges in one line for every commit*)
+
 git log --all (-*shows you all commits existing in whole tree*)
 
 git log --graph (-*shows you relative commits with a graphical illustration of tree's branches*)
