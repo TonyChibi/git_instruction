@@ -108,6 +108,7 @@ git checkout HEAD^ (-*will move you to one commit brefore your current position*
 
 git checkout main~5 (-*will move you to 5 commit before the latest commit on main branch*)
 
+>## To get over <a name="detached_head">detached head</a> state you'll just need to checkout  
 ---
 
 # **<a name="comits_man">Commits manipulations</a>**
